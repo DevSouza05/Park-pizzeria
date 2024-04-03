@@ -1,7 +1,9 @@
 const c = (el)=>document.querySelector(el);
 const cs= (el)=>document.querySelectorAll(el);
 
-
+Person.map((item, index)=>{
+    console.log(item) 
+})
 
 // mapeando pizzaJson
 pizzaJson.map((item , index)=>{
@@ -16,10 +18,13 @@ pizzaJson.map((item , index)=>{
 
     // open modal
     pizzaItem.querySelector("a").addEventListener("click", (e)=>{
-        e.preventDefault()
+        e.preventDefault();
     
-        c(".pizzaWindowArea").style.opacity= 1;
-        c(".pizzaWindowArea").style.display="flex"
+        c(".pizzaWindowArea").style.opacity= 0;
+        c(".pizzaWindowArea").style.display="flex";
+        setTimeout(()=>{
+            c(".pizzaWindowArea").style.opacity= 1;
+        }, 200);
     })
 
     c(".pizza-area").append(pizzaItem);
