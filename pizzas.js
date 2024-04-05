@@ -8,6 +8,3 @@ let pizzaJson = [
     {id:7, name:'Chocolate', img:'images/pizza7.png', price:22.36, sizes:['320g', '530g', '860g'], description:'Descrição da pizza em mais de uma linha muito legal bem interessante'}
 ];
 
-let Person = [
-    {id:1, name:"Hulk", force:100, arma:"punho" }
-]
